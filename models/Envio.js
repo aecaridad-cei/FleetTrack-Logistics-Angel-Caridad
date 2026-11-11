@@ -28,6 +28,11 @@ const envioSchema = new mongoose.Schema({
         },
         default: 'En Almacén'
     },
+    prioridad: {
+    type: String,
+    enum: ['Baja', 'Media', 'Alta', 'Urgente'],
+    default: 'Media'
+    },
     repartidor: {
         type: String,
         trim: true,
