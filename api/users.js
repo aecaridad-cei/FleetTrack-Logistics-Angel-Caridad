@@ -24,7 +24,7 @@ export default async function handler(req, res) {
 
             const {
                 usuario,
-                ciudad,
+                email,
             } = req.query
 
             const filtro = {}
